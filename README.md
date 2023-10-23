@@ -70,15 +70,26 @@ Step 7:  we will connect to the registry and add a key that is supposed to furth
 </p>
 
 <p>
-Step 8: After the Vm is restarted and logged in. we will go to Nessus and configure the scan settings by adding credentials of our VM's username and password. Then launch the scan again for second time. the reason behind this is to compare our first scan to the second scan for more vulnerability results because we enabled credential scanning and configured our Vm to accept remote scans.
+Step 8: After the Vm is restarted and logged in. we will go to Nessus and configure the scan settings by adding credentials of our VM's username and password. However, install a depreciated Firefox on the VM  for vulnerability testing. Then launch the scan again for the second time. The reason behind this is to compare our first scan to the second scan for more vulnerability results because we enabled credential scanning and configured our Vm to accept remote scans. 
 </p>
 
 
-</p>
 <h1>Observation</h1>
 <p>
-
-![image](https://github.com/Sismahil/Sentinel-Siem-/assets/121772702/ac91977c-2fdf-454e-9c61-17bce9604ec3)
   
+BEFORE CREDENTIALS:
+  
+![image](https://github.com/Sismahil/Nessus/assets/121772702/1c6aaee1-8aa2-48ad-a2df-add96c29a4c4)
 </p>
-NOTE: After leaving the Powershell running for like 12hrs, I noticed bunch of attacks all over the world with totall of 7000+ attacks. Majority from philpine and Russia aggregating up to 4500 attacks. The Takeaway is as soon as anything is vulneranble on the internet, people will always try to exploit it for their benefit regardless of big or small your organiation is. Another takeway would be to consider using a strong password or multi-authentication approach to avoid brute force attack on gaining access to the host. Never use the password of admistrator because it is likely to be guessed right away by bad actors.
+</br>
+</br>
+</br>
+
+<P>
+AFTER CREDENTIALS:
+  
+  ![image](https://github.com/Sismahil/Nessus/assets/121772702/b042be8a-a3d7-422b-bacc-414689cc778f)
+</P>
+</br>
+</br>
+Note: Before adding credentials, we had 13 vulnerabilities with 1 medium level but after adding credentials we got 36 vulnerabilities with 4 Critcals because we installed a depreciated Firefox with no updated patches. which poses a high level of threat to our PC or organization that can be easily exploited by Bad-Actors. To remediate this vulnerability, we simply need to delete the old Firefox and install a new Firefox with updated patches against vulnerabilities. 
